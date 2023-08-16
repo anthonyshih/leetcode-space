@@ -25,7 +25,14 @@ Output: [0,1]
 class Solution(object):
     def twoSum(self, nums, target):
         """
-        :type nums: List[int]
-        :type target: int
+        :type nums: List[int] [2, 1, 5, 3]
+        :type target: int 4
         :rtype: List[int]
         """
+
+        prev_map = {}
+
+        for i, n in enumerate(nums):
+            diff = target - n
+            if diff in prev_map:
+                return [prev_map[diff], i]

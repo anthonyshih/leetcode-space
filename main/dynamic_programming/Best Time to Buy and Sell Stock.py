@@ -31,3 +31,18 @@ class Solution(object):
         :type prices: List[int]
         :rtype: int
         """
+        buy_t = 0
+        sell_t = 1
+        max_profit = 0
+
+        while sell_t < len(prices):
+            # is profit?
+            if prices[buy_t] < prices[sell_t]:
+                temt_profit = prices[sell_t] - prices[buy_t]
+                max_profit = max(temt_profit, max_profit)
+            else: # not profit
+                buy_t += 1 # <?>
+            sell_t += 1 
+            
+        return max_profit
+
