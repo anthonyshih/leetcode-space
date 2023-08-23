@@ -39,8 +39,9 @@ Can you do it without using any built-in function (i.e., like __builtin_popcount
 '''
 
 
+
 '''
-Solution from Hottari
+Note from Hottari
 
 Sol. I
 1. For each x belonging to 2^m, there must be a '1' (1, 10, 100, 10000...)
