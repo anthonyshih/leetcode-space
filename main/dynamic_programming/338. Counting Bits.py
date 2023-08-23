@@ -44,3 +44,12 @@ class Solution(object):
         :type n: int
         :rtype: List[int]
         """
+        ans = [0]*(n+1)                             # faster than list.append() and [0 for i in range(n+1)]
+        update = 1
+        for i in range(1, n+1):
+            if i == update*2:                       # the binary representation of power(2, n1) must be 1 
+                update = i
+                ans[i] = 1
+            else: ans[i] = 1 + ans[i - update]      # i = update + n2 (update < n2 < update*2) 
+                                                    # ( use previous value in the list -> dynamic ) 
+        return ans
