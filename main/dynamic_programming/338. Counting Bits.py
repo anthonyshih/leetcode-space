@@ -47,11 +47,14 @@ Sol. I
 1. For each x belonging to 2^m, there must be a '1' (1, 10, 100, 10000...)
 2. Any y from 0 to n can be decomposed into 2^m + p.
 
-So, we can create a temporary integer called 'update' 
-and double it when i == update*2 (since 2^m must have a '1')
+Therefore, we can create a temporary integer called 'update' 
+and check if 'i == 2^m' by doubling 'update':
+- Initial update = 1 = 2^0.
+- Is i equal to update multiplied by 2 ?
+- This is because 2^m must have a '1'
 
 Step 0: ans[0] = 0
-Step 1: Check 'update' (Is i == update*2?)
+Step 1: Check 'update' (if i == update*2: sentence...)
 Step 2: ans[i] = 1 + ans[i - update] (any y from 0 to n can be decomposed into 2^m + p)
 
 
