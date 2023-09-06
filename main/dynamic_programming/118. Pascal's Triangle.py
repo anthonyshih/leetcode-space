@@ -21,7 +21,7 @@ Output: [[1]]
 '''
 Note from Hottari
 
-Sol. I
+Sol. I  (https://www.youtube.com/watch?v=9XQ0SCx03zY)
 ( A new row is "[ the sum of neighboring elements from '[0] + row[-1] + [0]' ]" )
 ( calculated from 2nd element )
 ex
@@ -32,7 +32,7 @@ Step 1: extend row[i-1] to [0, ..., 0] -> temp = [0] + tri_li[-1] + [0]
 Step 2: calculate the sum of neighboring elements.
 
 
-Sol. II
+Sol. II  (https://www.youtube.com/watch?v=nPVEaB3AjUM)
 ( A new row is " [1] + [ the sum of neighboring elements from row[-1] from 2nd position ] + [1]" )
 ( calculated from 2nd element )
 ex
